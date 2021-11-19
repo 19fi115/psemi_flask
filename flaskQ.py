@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    dictionary = {"name": "六鹿 博紀", "age": 21, "mail": "hiroki-mutsuga@isl.im.dendai.ac.jp", "address": "東京都"}
+    dictionary = {"name": "むっちゃん", "age": 21, "address": "東京都"}
     flag = False
 
     return render_template('flaskQ.html', dictionary = dictionary, flag = flag)
