@@ -1,0 +1,28 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Title</title>
+  </head>
+  <body>
+    <p>
+      {% for i in range(10) %}
+      <li>{{ i }}</li>
+      {% endfor %}
+    </p>
+    <hr>
+
+    <p>{{ "name: %s age: %s" % (dictionary["name"], dictionary["age"]) }}</p>
+    <p>{{ "mail: %s" % (dictionary["mail"]) }}</p>
+    <p>{{ "address: %s" % (dictionary["address"]) }}</p>
+    <hr>
+
+    {% if flag %}
+      <p class="True">True</p>
+    {% else %}
+      <p class="False">False</p>
+    {% endif %}
+  </body>
+</html>
